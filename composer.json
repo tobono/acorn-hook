@@ -1,0 +1,35 @@
+{
+  "name": "tobono/acorn-hook",
+  "type": "package",
+  "license": "MIT",
+  "description": "A WordPress Hook API wrapper for acorn",
+  "authors": [
+    {
+      "name": "Reza Bahreynipour",
+      "email": "bahreynipour@gmail.com"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "sage",
+    "acorn",
+    "hook",
+    "filter",
+    "action"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Tobono\\Hook\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0"
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "Tobono\\Hook\\HookServiceProvider"
+      ]
+    }
+  }
+}
